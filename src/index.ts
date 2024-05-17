@@ -14,7 +14,7 @@ export const handler: Handler<APIGatewayEvent> = (event, context, callback: APIG
     const claim: jwt.JwtPayload = {
         iss: process.env.APPLE_TEAM_ID,
         iat: nowstamp,
-        exp: nowstamp + 15777000, // 6 months time
+        exp: nowstamp + 15551999, // 6 months time
         origin: ["https://setlist-sherlock.dylmye.me"] // replace/remove this if you're using this somewhere else
     }
 
