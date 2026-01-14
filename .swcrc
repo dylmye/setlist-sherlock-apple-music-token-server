@@ -1,13 +1,12 @@
 {
-    "$schema": "https://json.schemastore.org/swcrc",
-    "module": {
-      "type": "commonjs"
-    },
-    "jsc": {
-      "parser": {
-        "syntax": "typescript"
+  "$schema": "https://swc.rs/schema.json",
+  "jsc": {
+    "minify": {
+      "compress": true,
+      "mangle": {
+        "keepFnNames": false,
+        "reserved": ["handler"]
       }
-    },
-    "minify": true,
-    "sourceMaps": true
+    }
+  }
 }
